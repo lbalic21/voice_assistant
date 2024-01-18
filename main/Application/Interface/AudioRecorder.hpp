@@ -1,11 +1,11 @@
-#ifndef _Audio_Provider_
-#define _Audio_Provider_
+#ifndef _Audio_Recorder_
+#define _Audio_Recorder_
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-class AudioProvider
+class AudioRecorder
 {
     public:
         virtual void provide() = 0;
@@ -15,4 +15,4 @@ class AudioProvider
 }
 #endif
 
-#endif /* _Audio_Provider_ */
+#endif /* _Audio_Recorder_ */
