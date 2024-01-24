@@ -1,12 +1,17 @@
 set(COMPONENT_SRCS 
 "main.c"
-"Application/Main/VoiceAssistant.cpp"
-"Application/ESP32/AudioESP.cpp"
+"Application/VoiceAssistant.cpp"
+"Application/AudioRecorder.cpp"
+"Application/FeatureProvider.cpp"
+"Application/FeatureGenerator.cpp"
+"Application/CommandRecognizer.cpp"
+"Application/CommandResponder.cpp"
+"Application/ringBuff.c"
+"Application/model.cc"
+"Application/projectConfig.cpp"
 )
 
-set(COMPONENT_ADD_INCLUDEDIRS   . 
-                                Application/Main
-                                Application/Interface
-                                Application/ESP32)
+set(COMPONENT_ADD_INCLUDEDIRS   .
+                                Application)
 
 register_component()
